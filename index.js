@@ -1,3 +1,10 @@
+var book = {
+  "rank"  : "" , 
+  "title" : "" ,
+  "author": "" ,
+  "date"  : "" ,
+}
+
 function get(){
 
   const url = "https://api.nytimes.com/svc/books/v3/lists/current/hardcover-fiction.json?api-key=CSSiiAHFVeAqiv4OGeUxmMy61lPKwSqG";
@@ -17,5 +24,9 @@ function get(){
 
 function fillTable(arrayBooks){
     
-
- }
+  let listBooks = arrayBooks.books
+  var table = document.getElementById('table')
+  listBooks.forEach(element => {
+   console.log(element.title)
+  });
+}
