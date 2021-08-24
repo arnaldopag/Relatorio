@@ -5,30 +5,31 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta name="author" content="Arnaldo Pagani Junior" />
-        
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
         <link
             rel="stylesheet"
             href="//cdn.datatables.net/1.10.25/css/jquery.dataTables.min.css"
         />
+        <link rel="stylesheet" href="style.css">
         <title>Relatorio Best-Sellers</title>
     </head>
     <header>
         <h1>Lista de Best-Sellers</h1>
     </header>
-    <body>
+    <body class="container">
         <div id="inputs">
             <div>
                     <label for="category">Categorias</label>
                     <input type="text" name="list" id="list" list="category" />
                     <datalist id="category"></datalist>
-                    <input type="Button" id="search" value="Pesquisar" onclick="findListname()" />
-                    <input type="Button" id="print" value="Imprimir" class="printPage" />
+                    <input type="Button" id="search" value="Pesquisar"  class="btn btn-primary" onclick="findListname()" />
+                    <input type="Button" id="print" value="Imprimir" class="btn btn-primary" />
 
                 </form>
             </div>
         </div>
         <div id="divTable" >
-         <table id="table" class="printPage">
+         <table id="table" class="table table-hover">
                <thead>
                  <tr>
                        <th>Rank</th>
@@ -39,9 +40,18 @@
                 <tbody></tbody>
             </table>
          </div>
+         <footer >
+             <div id="footer">
+                 <p>Desenvolvido por: Arnaldo Pagani Junior</p> 
+                <p><a href="https://www.linkedin.com/in/arnaldo-pagani-junior-7b1b87211/" target="_blank">Linkdin</a><a href="github.com/arnaldopag" target="_blank"> GitHub</a></p>
+                </div>
+            </footer>
     </body>
     <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="//cdn.datatables.net/1.10.25/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js" integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/" crossorigin="anonymous"></script>
     <script src="index.js"></script>
 </html>

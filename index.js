@@ -1,5 +1,6 @@
 var arrayCategory = []
-var conteudo = [];
+var emptyArray = []
+
 
 function getListCategory(){
   const url = `https://api.nytimes.com/svc/books/v3/lists/names.json?api-key=CSSiiAHFVeAqiv4OGeUxmMy61lPKwSqG`;
@@ -89,4 +90,5 @@ $("#print").click(function(){
   window.print();
   return false;
 });
+
 
